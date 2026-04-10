@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1c1b1b",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#fcf9f8",
+                    "tertiary-fixed": "#e4e2e1",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "on-surface-variant": "#43493d",
+                    "on-background": "#1c1b1b",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-primary-container": "#98c27b",
+                    "inverse-on-surface": "#f3f0ef",
+                    "surface-container": "#f0eded",
+                    "tertiary-fixed-dim": "#c8c6c6",
+                    "primary-container": "#2d5016",
+                    "on-primary-fixed": "#0a2100",
+                    "error": "#ba1a1a",
+                    "primary": "#173901",
+                    "secondary-container": "#fc6451",
+                    "primary-fixed-dim": "#a8d38a",
+                    "surface-container-low": "#f6f3f2",
+                    "on-secondary-fixed": "#410000",
+                    "inverse-primary": "#a8d38a",
+                    "background": "#fcf9f8",
+                    "surface-tint": "#43682b",
+                    "on-secondary-fixed-variant": "#8e130c",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-fixed-variant": "#2c4f15",
+                    "secondary": "#b02d21",
+                    "tertiary-container": "#474747",
+                    "on-tertiary-container": "#b7b5b5",
+                    "inverse-surface": "#313030",
+                    "secondary-fixed-dim": "#ffb4a9",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#eae7e7",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fcf9f8",
+                    "on-secondary-container": "#650001",
+                    "outline-variant": "#c3c9b9",
+                    "secondary-fixed": "#ffdad5",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "primary-fixed": "#c4efa3",
+                    "surface-variant": "#e5e2e1",
+                    "outline": "#73796c",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#313131",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-6 py-4 sticky top-0 z-40 bg-[#fcf9f8]/90 dark:bg-stone-950/90 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#173901] dark:text-[#8db17e]" data-icon="shield_with_heart">shield_with_heart</span>
+<span class="text-xl font-extrabold tracking-tighter text-[#173901] dark:text-stone-100">Mindful Guardian</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container">
+<img alt="Senior user profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a dignified senior woman with silver hair and warm expression in soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfZOBEIxCbd-LxJGMye-48FD05E9WbRfpGggQwFtRKtUZkAKc9NUpwtT3TYq6fypNDJ_fxw60oV9JN7TO5X_WdXTN-aIOU62Ocvo70prdszzFmHRszPCFyOj9Kk6GYaitc-FxkpjhceYHzx6Q0oh6SWj10io6tzgtfKNT5dCwB9_wR24ewKdp9bpiIRcKj5Cz4V90aAbD0p3BVuSQLcn_XyvO1LWyvto0FxUh9L59UrT0a5CTkBBzj-6eEE9gf4h0uNkydZRk_B60"/>
+</div>
+</div>
+</header>
+<main class="flex-grow w-full max-w-5xl mx-auto px-6 py-12">
+<!-- Results Header Section -->
+<div class="mb-12">
+<div class="flex items-center gap-2 mb-2 text-primary font-mono text-sm tracking-widest uppercase">
+<span>Phase 02</span>
+<span class="w-8 h-px bg-primary/20"></span>
+<span>Complete</span>
+</div>
+<h1 class="text-5xl font-black tracking-tighter text-on-surface mb-4">Results</h1>
+<p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                Your home assessment is complete. We identified <span class="font-bold text-primary">4 critical hazards</span> that require immediate attention to ensure long-term safety and mobility.
+            </p>
+</div>
+<!-- Bento Grid Assessment Summary -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-16">
+<!-- Summary Stats Card -->
+<div class="md:col-span-4 bg-primary text-white p-8 rounded-xl flex flex-col justify-between relative overflow-hidden">
+<div class="relative z-10">
+<p class="text-white/70 font-medium mb-1">Safety Score</p>
+<h2 class="text-7xl font-black mb-4">68</h2>
+<div class="h-2 w-full bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container w-[68%]"></div>
+</div>
+</div>
+<div class="mt-8 relative z-10">
+<p class="text-sm leading-snug text-white/80 italic">"Moderate risk detected in high-traffic transition zones."</p>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/5 rounded-full blur-3xl"></div>
+</div>
+<!-- Hazards Found Column -->
+<div class="md:col-span-8 bg-surface-container-low p-8 rounded-xl">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h3 class="text-2xl font-bold tracking-tight text-on-surface">Hazards Found</h3>
+<p class="text-on-surface-variant">Prioritized by severity and fall risk</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="warning" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="p-3 rounded-full bg-error-container text-on-error-container">
+<span class="material-symbols-outlined" data-icon="bathroom">bathroom</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Bath Slip Zone</h4>
+<p class="text-sm text-on-surface-variant">Lacks grab bars and non-slip surfacing near transition area.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="p-3 rounded-full bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined" data-icon="stairs">stairs</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Poor Stair Visibility</h4>
+<p class="text-sm text-on-surface-variant">Inadequate lighting at the base of the basement staircase.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommendations Section -->
+<div class="mb-12">
+<h3 class="text-3xl font-black tracking-tight text-on-surface mb-8">Recommended Fixes</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Fix Card 1 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-48 overflow-hidden bg-stone-200">
+<img alt="Bathroom grab bars" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern stainless steel safety grab bar installed on a minimalist light gray tiled bathroom wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmjhQz0kaDkEvjboakII6ab-0_3cEdxasgiJnMNyXJnX57JT4sowt_587anDBmte3lp3ggZ4mANs43m3fHRRQTs3X6OGr97WXWD4fMAG1ltR5LGwksS5-tOKriICXIwNkfvbvyH2afA_2OlnmlKxwF0k_KkhThMyJ656UcqBMUdhOSxdwnLiCunTUfhXNs8o5G90DIOO0Q-jM0pgloFvPQuz5WA9Xw8MV_C8FSK43KoOBpvw2jcZ3Bxh_ToZldblxxNS5TLS3XZmA"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<h4 class="text-xl font-bold text-primary">Grab Bar Installation</h4>
+<span class="px-2 py-1 bg-primary/5 text-primary text-[10px] font-black uppercase tracking-widest rounded">High Impact</span>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Est. Cost</p>
+<p class="text-lg font-bold text-on-surface">$120 – $250</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Difficulty</p>
+<div class="flex gap-1 mt-1">
+<span class="w-4 h-1 bg-primary rounded-full"></span>
+<span class="w-4 h-1 bg-primary rounded-full"></span>
+<span class="w-4 h-1 bg-surface-container-highest rounded-full"></span>
+</div>
+</div>
+</div>
+<button class="mt-auto w-full py-3 bg-surface-container-high text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors">View Details</button>
+</div>
+</div>
+<!-- Fix Card 2 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-48 overflow-hidden bg-stone-200">
+<img alt="Motion lighting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Contemporary hallway at night with soft warm LED motion-sensor path lighting illuminating the floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_L530gX12JfsQTLgR64VEZmj8p8Aa2lHPwQhE8QMQm2m3MKY5ub8uF4L5q2Z0giJGE3uWHmDvYqZzTbgy9m0MVQdrrc6vrK5tsNN4YY_VJUnlDgSjFjnnMAL1j589rkoJ6KRnZdjNQNEoRSOgOv10gkyXIO4uuPH5JzmsBMy_6ASFYzxCG7NwsUly-genwMSAT8JvPaeTJx_FLft4GST4Ixiz_GYP6OnNH2b7BqhpRBWUENXuSHk0YCSnMqSmnUrXOJep3JEUWVU"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<h4 class="text-xl font-bold text-primary">Smart Lighting</h4>
+<span class="px-2 py-1 bg-primary/5 text-primary text-[10px] font-black uppercase tracking-widest rounded">Moderate</span>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Est. Cost</p>
+<p class="text-lg font-bold text-on-surface">$45 – $90</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Difficulty</p>
+<div class="flex gap-1 mt-1">
+<span class="w-4 h-1 bg-primary rounded-full"></span>
+<span class="w-4 h-1 bg-surface-container-highest rounded-full"></span>
+<span class="w-4 h-1 bg-surface-container-highest rounded-full"></span>
+</div>
+</div>
+</div>
+<button class="mt-auto w-full py-3 bg-surface-container-high text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors">View Details</button>
+</div>
+</div>
+<!-- Fix Card 3 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-48 overflow-hidden bg-stone-200">
+<img alt="Rug grip" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Corner of a plush area rug being lifted to show a rubberized non-slip mesh padding underneath on hardwood floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjdD82081rfjalXNc41K--p9p6CaP2fGCqsGzKzbLFZgyykOpkcX65PFapa0GN_Ga02TUNAbyykEeDffYyR07WYCxfhzYXdads2MxLXaEuwNBHJhXrDQAGy8vsoLLfI4z7_XDPg_WpvG4at2z-sdCJl3X16TUf-TgDVjb7qs_p7b73BLYptUXiHTi3a6UZUhYEuV_80ppa7uShtCZRIy5JcjK4g1Hjts7kZj6_H-9C5N-s8zjD5SabWxv04f4PUTB1BFHpPkedHxU"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<h4 class="text-xl font-bold text-primary">Anti-Slip Treads</h4>
+<span class="px-2 py-1 bg-primary/5 text-primary text-[10px] font-black uppercase tracking-widest rounded">Easy Fix</span>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Est. Cost</p>
+<p class="text-lg font-bold text-on-surface">$20 – $40</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Difficulty</p>
+<div class="flex gap-1 mt-1">
+<span class="w-4 h-1 bg-primary rounded-full"></span>
+<span class="w-4 h-1 bg-surface-container-highest rounded-full"></span>
+<span class="w-4 h-1 bg-surface-container-highest rounded-full"></span>
+</div>
+</div>
+</div>
+<button class="mt-auto w-full py-3 bg-surface-container-high text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors">View Details</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action -->
+<div class="bg-primary text-white rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between gap-8 mb-24 shadow-2xl">
+<div class="max-w-md text-center md:text-left">
+<h3 class="text-3xl font-black mb-2 tracking-tight">Need Professional Help?</h3>
+<p class="text-white/80 leading-relaxed">Our certified installers specialize in aging-in-place modifications. Get it done right the first time.</p>
+</div>
+<button class="px-10 py-5 bg-secondary-container text-white text-lg font-black rounded-xl hover:opacity-90 transition-opacity active:scale-95 whitespace-nowrap shadow-xl">
+                Get Help with Fixes
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-8 pt-3 bg-[#fcf9f8] dark:bg-stone-950 shadow-[0_-4px_24px_rgba(28,27,27,0.04)] rounded-t-3xl">
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 opacity-60 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all rounded-2xl p-2" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="dashboard">dashboard</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-wider">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#2D5016] text-white rounded-2xl px-5 py-2.5 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="fact_check">fact_check</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-wider">Assessment</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 opacity-60 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all rounded-2xl p-2" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="menu_book">menu_book</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-wider">Library</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1c1b1b",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#fcf9f8",
+                    "tertiary-fixed": "#e4e2e1",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "on-surface-variant": "#43493d",
+                    "on-background": "#1c1b1b",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-primary-container": "#98c27b",
+                    "inverse-on-surface": "#f3f0ef",
+                    "surface-container": "#f0eded",
+                    "tertiary-fixed-dim": "#c8c6c6",
+                    "primary-container": "#2d5016",
+                    "on-primary-fixed": "#0a2100",
+                    "error": "#ba1a1a",
+                    "primary": "#173901",
+                    "secondary-container": "#fc6451",
+                    "primary-fixed-dim": "#a8d38a",
+                    "surface-container-low": "#f6f3f2",
+                    "on-secondary-fixed": "#410000",
+                    "inverse-primary": "#a8d38a",
+                    "background": "#fcf9f8",
+                    "surface-tint": "#43682b",
+                    "on-secondary-fixed-variant": "#8e130c",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-fixed-variant": "#2c4f15",
+                    "secondary": "#b02d21",
+                    "tertiary-container": "#474747",
+                    "on-tertiary-container": "#b7b5b5",
+                    "inverse-surface": "#313030",
+                    "secondary-fixed-dim": "#ffb4a9",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#eae7e7",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fcf9f8",
+                    "on-secondary-container": "#650001",
+                    "outline-variant": "#c3c9b9",
+                    "secondary-fixed": "#ffdad5",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "primary-fixed": "#c4efa3",
+                    "surface-variant": "#e5e2e1",
+                    "outline": "#73796c",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#313131",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .safety-ring {
+            background: conic-gradient(from 0deg, #173901 85%, #f0eded 0%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-6 py-4 sticky top-0 z-40 bg-[#fcf9f8]/90 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#173901] text-2xl" data-icon="shield_with_heart">shield_with_heart</span>
+<h1 class="text-xl font-extrabold tracking-tighter text-[#173901]">Mindful Guardian</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="Senior woman with a warm, confident smile, soft studio lighting, high-end portrait photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqYTTDHO12Q197nkI7JeW6joDn1kpk5Jfz4qTh4CvKmA57Rmr5cJSkwVwkb-9CoY4VcVscINGWc5w4QAwPHvSWTJcApzsDoJno_RKqP2V-cVh5GlYlJQtEsT6z0EgV2-he5FD4Mkbwty4x0tKJlAVNowjLhomSYfLRioI3MWagXjKbelW_2xKkxsHnEnqeDAQpOO3Ohtg2uwLPOI5tyF5k3-idR6IIGhKbCeNBy2hnQsNgUEkyWO56-3zL3CLI94q-4lrA_FS5bg8"/>
+</div>
+</div>
+</header>
+<main class="max-w-5xl mx-auto px-6 pt-8 pb-12">
+<!-- Dashboard Header -->
+<div class="mb-10">
+<p class="font-mono text-xs uppercase tracking-[0.2em] text-outline mb-2">Morning, Margaret</p>
+<h2 class="text-4xl font-extrabold tracking-tight text-on-surface">Dashboard</h2>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Safety Score Card (Large) -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between min-h-[340px]">
+<div>
+<h3 class="text-2xl font-bold tracking-tight text-primary mb-2">Your Safety Score</h3>
+<p class="text-on-surface-variant max-w-sm">Based on your last balance check and home environment assessment.</p>
+</div>
+<div class="flex items-end justify-between mt-8">
+<div class="relative flex items-center justify-center w-40 h-40">
+<div class="absolute inset-0 rounded-full safety-ring opacity-20"></div>
+<div class="flex flex-col items-center">
+<span class="text-5xl font-black text-primary">85</span>
+<span class="text-xs font-bold uppercase tracking-widest text-outline">Excellent</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 text-right">
+<div class="flex items-center justify-end gap-2">
+<span class="text-sm font-semibold text-on-surface">Strength</span>
+<div class="w-24 h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[90%]"></div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2">
+<span class="text-sm font-semibold text-on-surface">Balance</span>
+<div class="w-24 h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[75%]"></div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2">
+<span class="text-sm font-semibold text-on-surface">Cognition</span>
+<div class="w-24 h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[95%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Action Card -->
+<div class="md:col-span-4 bg-primary rounded-xl p-8 flex flex-col justify-between text-white relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-2xl font-bold leading-tight mb-4">Start New Assessment</h3>
+<p class="text-on-primary-container text-sm leading-relaxed mb-6">A quick 5-minute check to ensure your surroundings and gait are optimal.</p>
+</div>
+<button class="relative z-10 bg-white text-primary px-6 py-4 rounded-xl font-bold text-lg flex items-center justify-between active:scale-95 transition-transform">
+                    Begin Now
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<!-- Abstract decorative shape -->
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary-container rounded-full opacity-40 blur-3xl"></div>
+</div>
+<!-- Recent Activity -->
+<div class="md:col-span-7 bg-surface-container-low rounded-xl p-8">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-xl font-bold text-on-surface">Recent Activity</h3>
+<button class="text-sm font-bold text-primary">View All</button>
+</div>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="home_health">home_health</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-on-surface">Home Safety Audit</h4>
+<span class="text-xs text-outline font-medium">Yesterday</span>
+</div>
+<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Living room identified as 'High Safety'. 2 trip hazards cleared.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="directions_walk">directions_walk</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-on-surface">Gait Stability Test</h4>
+<span class="text-xs text-outline font-medium">Oct 24</span>
+</div>
+<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Performed 30-second sit-to-stand. Improvement of 2.4s from last week.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Education Card -->
+<div class="md:col-span-5 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-32 bg-surface-container relative">
+<img alt="Safety Tips" class="w-full h-full object-cover" data-alt="Serene interior of a well-lit modern home with organized paths and soft natural light, architectural photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuPc5KRQ5B-bouasdtn7gPxfvQjb2vR3w5S-g6AQJA08fgofTCRl7i-QDt6s3tbhdyQA59-aQcXEnPzwEN9imAvd5z-w8teoesG0-KaLyXGaxJGRPWL6btHTtLJj7eLudJAIlteVttfkIp3f54kCRWPOS_ZNteleKRnc09170i68f9OmU9Wr5ql-yX-wisvz5zF1mV_Wc9DHADiTFkdRHXzt_fAMcZ44afJBatEFiHkJK6owVktZz0On-VBPW-_mLpGaswtdNQrFo"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Must Read</div>
+</div>
+<div class="p-6">
+<h4 class="text-lg font-bold text-on-surface mb-2">Winter-Proof Your Home</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-4">Practical tips to manage low light and slippery entranceways as the seasons change.</p>
+<a class="text-sm font-bold text-primary flex items-center gap-1 group" href="#">
+                        Open Library
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-8 pt-3 bg-[#fcf9f8] shadow-[0_-4px_24px_rgba(28,27,27,0.04)] rounded-t-3xl">
+<a class="flex flex-col items-center justify-center bg-[#2D5016] text-white rounded-2xl px-5 py-2.5 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-wider mt-1">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 opacity-60 hover:bg-stone-100 p-2 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="fact_check">fact_check</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-wider mt-1">Assessment</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 opacity-60 hover:bg-stone-100 p-2 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-wider mt-1">Library</span>
+</a>
+</nav>
+</body></html>

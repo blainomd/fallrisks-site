@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smart Home Monitor - Mindful Care</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dcd9d9",
+                    "on-secondary-fixed-variant": "#8e130c",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#ffb4a9",
+                    "inverse-surface": "#313030",
+                    "surface-variant": "#e5e2e1",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "secondary-container": "#fc6451",
+                    "on-primary": "#ffffff",
+                    "primary": "#173901",
+                    "inverse-on-surface": "#f3f0ef",
+                    "secondary": "#b02d21",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#eae7e7",
+                    "primary-fixed-dim": "#a8d38a",
+                    "outline-variant": "#c3c9b9",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "outline": "#73796c",
+                    "surface-tint": "#43682b",
+                    "on-surface-variant": "#43493d",
+                    "on-error-container": "#93000a",
+                    "on-background": "#1c1b1b",
+                    "background": "#fcf9f8",
+                    "surface-bright": "#fcf9f8",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#e4e2e1",
+                    "primary-container": "#2d5016",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed-variant": "#2c4f15",
+                    "on-primary-fixed": "#0a2100",
+                    "surface-container-low": "#f6f3f2",
+                    "primary-fixed": "#c4efa3",
+                    "tertiary-fixed-dim": "#c8c6c6",
+                    "surface-container": "#f0eded",
+                    "on-surface": "#1c1b1b",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#ffdad5",
+                    "inverse-primary": "#a8d38a",
+                    "tertiary-container": "#474747",
+                    "surface": "#fcf9f8",
+                    "surface-container-highest": "#e5e2e1",
+                    "tertiary": "#313131",
+                    "on-primary-container": "#98c27b",
+                    "on-secondary-container": "#650001",
+                    "on-secondary-fixed": "#410000"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#fcf9f8]/80 backdrop-blur-md sticky top-0 z-40 shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-stone-200">
+<img alt="Elderly user profile photo" data-alt="portrait of a dignified senior man with a warm smile, soft natural lighting, elegant and serene mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsMUSvnGJX6GjBfQuDYHxRQI2x8q_LH8s7JmkDNgFKRomkHMzD3lC1O69mb-KKavwLqcH_MUy8dTqDmmAItf2ZAYyoRkP7akIOuMWEsutoat0EHioL17gFs-N2ONjEC7znTux5xdmN_k3T3n1BFkr3DTU9DE8X6PRecEzl1SjjXcOirW0Mbyp-1QDGvt--qPc4iXv11wDTuFg_fEp2CXdIMAEpezdBXkYvAt0yUhjwhwgRYdUBwm16OKwHEJwttxXFhRRyrvzbTj4"/>
+</div>
+<h1 class="text-2xl font-bold tracking-tighter text-stone-900 font-headline">Mindful Care</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-stone-200/50 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-[#2D5016]">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-8 pb-12">
+<!-- Dashboard Header -->
+<div class="mb-10">
+<h2 class="text-4xl font-extrabold tracking-tight text-on-surface mb-2">Smart Home Monitor</h2>
+<p class="text-on-surface-variant font-medium">All systems operational. Environment is secure.</p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Motion Sensors Card -->
+<div class="md:col-span-1 bg-surface-container-low rounded-[2rem] p-6 flex flex-col justify-between hover:bg-surface-container transition-all">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">sensors</span>
+</div>
+<span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Active</span>
+</div>
+<h3 class="text-xl font-bold mb-1">Motion Sensors</h3>
+<p class="text-on-surface-variant text-sm">Living Room</p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/10">
+<p class="text-xs text-on-surface-variant font-semibold">LAST DETECTED</p>
+<p class="text-sm font-medium">2 minutes ago</p>
+</div>
+</div>
+<!-- Smart Bed Sensor Card -->
+<div class="md:col-span-1 bg-surface-container-low rounded-[2rem] p-6 flex flex-col justify-between hover:bg-surface-container transition-all">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">bed</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+<span class="text-primary text-xs font-bold">Occupied</span>
+</div>
+</div>
+<h3 class="text-xl font-bold mb-1">Smart Bed Sensor</h3>
+<p class="text-on-surface-variant text-sm">In Bed</p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/10">
+<p class="text-xs text-on-surface-variant font-semibold">DURATION</p>
+<p class="text-sm font-medium">7h 24m sleep time</p>
+</div>
+</div>
+<!-- Fall Detection Card (Actionable/Urgent Style) -->
+<div class="md:col-span-2 bg-primary-container text-on-primary-container rounded-[2rem] p-8 flex flex-col justify-between shadow-xl relative overflow-hidden">
+<!-- Background texture/gradient -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-8">
+<div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl" style="font-variation-settings: 'FILL' 1;">watch_button_press</span>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-sm">battery_5_bar</span>
+<span class="text-sm font-bold">85%</span>
+</div>
+<span class="text-xs opacity-70">Syncing Live</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold mb-2">Fall Detection Wearable</h3>
+<p class="opacity-90 max-w-xs text-lg">Wearable detected on wrist. Heart rate stable at 72 BPM.</p>
+</div>
+<div class="relative z-10 flex gap-4 mt-8">
+<button class="bg-white text-primary px-6 py-3 rounded-xl font-bold text-sm hover:bg-stone-100 transition-colors">Test Alert</button>
+<button class="bg-white/10 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-white/20 transition-colors">Device Info</button>
+</div>
+</div>
+<!-- Front Door Lock -->
+<div class="md:col-span-1 bg-surface-container-low rounded-[2rem] p-6 flex flex-col justify-between hover:bg-surface-container transition-all">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+<span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">Secured</span>
+</div>
+<h3 class="text-xl font-bold mb-1">Front Door Lock</h3>
+<p class="text-on-surface-variant text-sm">Deadbolt Engaged</p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/10 flex justify-between items-end">
+<div>
+<p class="text-xs text-on-surface-variant font-semibold">LAST ACTION</p>
+<p class="text-sm font-medium">8:02 PM by Arthur</p>
+</div>
+<button class="text-primary font-bold text-sm">Manage</button>
+</div>
+</div>
+<!-- Daily Activity Pattern Graph -->
+<div class="md:col-span-3 bg-surface-container-low rounded-[2rem] p-8">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h3 class="text-2xl font-bold tracking-tight">Daily Activity Pattern</h3>
+<p class="text-on-surface-variant text-sm mt-1">Comparing today's movement to 30-day baseline</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+<span class="text-sm font-medium">Today</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-outline-variant/40"></div>
+<span class="text-sm font-medium">Baseline</span>
+</div>
+</div>
+</div>
+<!-- Custom SVG Graph for Editorial Look -->
+<div class="w-full h-64 relative mt-4">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 1000 200">
+<!-- Baseline Area -->
+<path class="text-outline-variant/10" d="M0,150 Q100,160 200,140 T400,100 T600,150 T800,120 T1000,140 V200 H0 Z" fill="currentColor"></path>
+<!-- Baseline Line -->
+<path class="text-outline-variant/40" d="M0,150 Q100,160 200,140 T400,100 T600,150 T800,120 T1000,140" fill="none" stroke="currentColor" stroke-dasharray="8 4" stroke-width="2"></path>
+<!-- Today Area -->
+<path class="text-primary/5" d="M0,160 Q100,170 200,130 T400,80 T600,140 T800,100 T1000,120 V200 H0 Z" fill="currentColor"></path>
+<!-- Today Line -->
+<path class="text-primary" d="M0,160 Q100,170 200,130 T400,80 T600,140 T800,100 T1000,120" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+<!-- Current Time Indicator -->
+<line class="text-primary/20" stroke="currentColor" stroke-width="1" x1="750" x2="750" y1="0" y2="200"></line>
+<circle class="text-primary" cx="750" cy="110" fill="currentColor" r="6"></circle>
+</svg>
+<!-- X-Axis Labels -->
+<div class="flex justify-between mt-4 text-xs font-bold text-on-surface-variant uppercase tracking-widest px-2">
+<span>12am</span>
+<span>4am</span>
+<span>8am</span>
+<span>12pm</span>
+<span>4pm</span>
+<span>8pm</span>
+<span>11pm</span>
+</div>
+</div>
+<div class="mt-8 flex items-start gap-4 p-4 bg-surface rounded-2xl">
+<span class="material-symbols-outlined text-primary-container">info</span>
+<p class="text-sm leading-relaxed text-on-surface-variant">
+<span class="font-bold text-on-surface">Insight:</span> Activity is slightly higher than usual in the late afternoon. This correlates with the scheduled physical therapy session today.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50">
+<!-- Background Blur/Shape -->
+<div class="bg-white/95 dark:bg-stone-900/95 backdrop-blur-xl border-t border-stone-100 dark:border-stone-800 rounded-t-[32px] shadow-[0_-8px_32px_rgba(28,27,27,0.06)] px-4 pt-3 pb-8">
+<div class="max-w-md mx-auto flex justify-around items-center">
+<!-- Dashboard Active -->
+<div class="flex flex-col items-center justify-center bg-stone-100 dark:bg-stone-800 text-[#173901] dark:text-white rounded-2xl px-3 py-1.5 active:scale-90 duration-200 ease-out cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span class="text-sm font-medium tracking-wide mt-1">Dashboard</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 active:scale-90 duration-200 ease-out cursor-pointer">
+<span class="material-symbols-outlined">nest_remote_comfort_sensor</span>
+<span class="text-sm font-medium tracking-wide mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 active:scale-90 duration-200 ease-out cursor-pointer">
+<span class="material-symbols-outlined">monitor_heart</span>
+<span class="text-sm font-medium tracking-wide mt-1">Health</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 active:scale-90 duration-200 ease-out cursor-pointer">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-sm font-medium tracking-wide mt-1">Care</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 active:scale-90 duration-200 ease-out cursor-pointer">
+<span class="material-symbols-outlined">shopping_basket</span>
+<span class="text-sm font-medium tracking-wide mt-1">Shop</span>
+</div>
+</div>
+</div>
+</nav>
+<!-- FAB (Contextual for Dashboard) -->
+<button class="fixed bottom-28 right-6 w-16 h-16 bg-secondary-container text-on-primary rounded-2xl shadow-lg flex items-center justify-center hover:scale-105 active:scale-95 transition-all z-40">
+<span class="material-symbols-outlined text-3xl">add_alert</span>
+</button>
+</body></html>

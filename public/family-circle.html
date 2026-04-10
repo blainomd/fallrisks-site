@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mindful Guardian - Family Circle</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f6f3f2",
+                        "surface-bright": "#fcf9f8",
+                        "surface": "#fcf9f8",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-fixed": "#0a2100",
+                        "tertiary-fixed": "#e4e2e1",
+                        "background": "#fcf9f8",
+                        "on-primary-container": "#98c27b",
+                        "error": "#ba1a1a",
+                        "secondary": "#b02d21",
+                        "on-secondary-fixed-variant": "#8e130c",
+                        "on-primary-fixed-variant": "#2c4f15",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "surface-tint": "#43682b",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary-container": "#474747",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "outline": "#73796c",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#410000",
+                        "primary-fixed-dim": "#a8d38a",
+                        "on-surface-variant": "#43493d",
+                        "surface-container-high": "#eae7e7",
+                        "secondary-fixed-dim": "#ffb4a9",
+                        "secondary-container": "#fc6451",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "surface-container": "#f0eded",
+                        "primary-container": "#2d5016",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#313131",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#c4efa3",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e5e2e1",
+                        "on-secondary-container": "#650001",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1c1b1b",
+                        "outline-variant": "#c3c9b9",
+                        "secondary-fixed": "#ffdad5",
+                        "surface-dim": "#dcd9d9",
+                        "primary": "#173901",
+                        "inverse-surface": "#313030",
+                        "on-tertiary-container": "#b7b5b5",
+                        "inverse-primary": "#a8d38a",
+                        "on-background": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface antialiased pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-stone-100/60 dark:bg-stone-900/60 backdrop-blur-md">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a smiling senior man with kind eyes and grey hair in a soft-lit indoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAneLUoXzbUH1jUMCmroS_esrjKwsmM-5vjUxQsaGZhOP5Ck_bfxdE25JF6Ucs7GVsiSeGyMjAqT8wxBdwyx1PT_uW7sDPNtvNgYMgv_clLIwFkREzXmFh8Ss83o5IYb2nVnc7tPuoMOMV-xMxqCAuCl449lf99UPya71HD1_NSb0RMOBCE7D3e-0Ixh_uVnbpoMzw8fX_DdoGJ0d7ObZPuOOtxepcG4nzXJZA48ZANwxILSaLRKDlCoFDCNyVdxXHZWJrxPia4UEU"/>
+</div>
+<h1 class="text-xl font-bold tracking-tighter text-[#173901] dark:text-[#8db172]">Mindful Guardian</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-xl hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+<span class="material-symbols-outlined text-[#173901]">settings</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-24 px-6 max-w-7xl mx-auto">
+<!-- Header Section -->
+<section class="mb-12">
+<h2 class="text-4xl font-extrabold tracking-tight text-on-surface mb-2">Family Circle</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-2xl">Coordinate care and stay connected with your loved ones in a secure, private environment.</p>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Family Members Section (Bento Large) -->
+<div class="md:col-span-8 space-y-6">
+<div class="flex items-end justify-between px-2">
+<h3 class="text-2xl font-bold tracking-tight">Active Care Circle</h3>
+<span class="text-sm font-mono text-outline uppercase tracking-widest">3 Members Online</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Member Card: Sarah -->
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between h-48 transition-transform hover:scale-[1.01] duration-200">
+<div class="flex justify-between items-start">
+<div class="flex gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Candid headshot of a woman with a warm smile, outdoor natural lighting, soft focus greenery background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWWXDas27HJRu4aidJxxQ5QC6UxYc84-0ElElFMBlAsggh2MqgmsrFY4mEbST4BpzX7cFUJywOA0lmyYCjf6dwActkT2NjchtZip-ayD38t_5-Bdt0hIzar6cByI6yJBjlBhqZ_KMTPIKLm9g0tHvP1IgBpH6NzEUS8mlk9mRgaMgiL1IExVtmp81fgOf5gyRkmDdgSIZYi0s4M5YeI0Z31u1VX0Tm41_N4STPUYaQgOQ1dMYB-wmyXioaE8cGcqNVCy3oGCsGgG8"/>
+<div>
+<h4 class="font-bold text-lg text-primary">Sarah</h4>
+<p class="text-sm text-outline">Primary Caregiver</p>
+</div>
+</div>
+<span class="flex h-2 w-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="mt-auto">
+<p class="text-on-surface-variant text-sm font-medium">Checked in 2h ago</p>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full w-[85%]"></div>
+</div>
+</div>
+</div>
+<!-- Member Card: John -->
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between h-48 transition-transform hover:scale-[1.01] duration-200">
+<div class="flex justify-between items-start">
+<div class="flex gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Professional portrait of a middle-aged man in a studio setting with soft side lighting and a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHuEcJdFDKAL0xQ-mSRAKFqW9l1jwEMBbefV63ylNN9MkfojPbHJ6s-j2SpYUsSvvI1ffjx3RXDehkb7zqhAvVtql9IGB3OdgkceU1N4dNamhhVB--5nICSckjQ5np5jBtKdHY8fm56mOsjD8hnEAUoVzCEJXsz8k6jyqZ00VT6mE-9TS-keUJJYU4KMlihoOW01uFWzOjuFgpmRQqTgx10_R5N0DR22ocBb9pNx0GifWefl6-tKVimO4puz2Xdwoj0oyvn6AvfgY"/>
+<div>
+<h4 class="font-bold text-lg text-primary">John</h4>
+<p class="text-sm text-outline">Family Member</p>
+</div>
+</div>
+<span class="flex h-2 w-2 rounded-full bg-outline-variant"></span>
+</div>
+<div class="mt-auto">
+<p class="text-on-surface-variant text-sm font-medium">Last active 5m ago</p>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full w-[95%]"></div>
+</div>
+</div>
+</div>
+<!-- Member Card: Emily -->
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between h-48 transition-transform hover:scale-[1.01] duration-200">
+<div class="flex justify-between items-start">
+<div class="flex gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Close up of a young woman with curly hair looking directly at camera with a confident expression, golden hour lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYTfDt1bkw70y8JaJZ_O8S7cPaXjIV4OPIVsfB99U-WeRWdUclFpCjwjHFJTgoZP7Gum-D09KwSgfkECGSbfAxn3FISoi8VcCyBzWi3_zCIFMFE1iNgDmRGkBTwUZFUmeRgdWQiExVVHAAoHWTe8L-VSGbTuRwJoZsU5d7jOUUFxwo1faLPRfpp0P_AgdTH70ocNG1N_Dy-yapVZj8msAV0amYLLPCExwXq0zi3VvTmXvjApu34sUiJTcm7bvlPblkNy4dHJooJJ8"/>
+<div>
+<h4 class="font-bold text-lg text-primary">Emily</h4>
+<p class="text-sm text-outline">Nurse / Visitor</p>
+</div>
+</div>
+<span class="flex h-2 w-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="mt-auto">
+<p class="text-on-surface-variant text-sm font-medium">Checked in 6h ago</p>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full w-[40%]"></div>
+</div>
+</div>
+</div>
+<!-- Invite Card -->
+<button class="bg-primary-container text-white p-6 rounded-xl flex flex-col items-center justify-center h-48 group hover:bg-[#1d3310] transition-all duration-300">
+<div class="bg-white/10 p-4 rounded-full mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">person_add</span>
+</div>
+<span class="font-bold text-lg">Invite Family Member</span>
+</button>
+</div>
+</div>
+<!-- Recent Updates Section (Bento Side) -->
+<div class="md:col-span-4 space-y-6">
+<div class="flex items-end justify-between px-2">
+<h3 class="text-2xl font-bold tracking-tight">Recent Updates</h3>
+</div>
+<div class="bg-surface-container-lowest border border-stone-100 rounded-2xl p-6 shadow-sm">
+<ul class="space-y-8">
+<li class="relative pl-8">
+<div class="absolute left-0 top-1 w-2 h-2 rounded-full bg-secondary"></div>
+<div class="absolute left-[3.5px] top-4 w-[1px] h-[calc(100%+32px)] bg-stone-100"></div>
+<p class="text-sm text-outline font-mono mb-1">14:20 PM</p>
+<h5 class="font-semibold text-on-surface">Assessment completed by Mom</h5>
+<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Weekly cognitive balance exercises finished with 92% accuracy score.</p>
+</li>
+<li class="relative pl-8">
+<div class="absolute left-0 top-1 w-2 h-2 rounded-full bg-primary"></div>
+<div class="absolute left-[3.5px] top-4 w-[1px] h-[calc(100%+32px)] bg-stone-100"></div>
+<p class="text-sm text-outline font-mono mb-1">11:05 AM</p>
+<h5 class="font-semibold text-on-surface">Medication Logged</h5>
+<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Sarah confirmed morning vitals and medication intake.</p>
+</li>
+<li class="relative pl-8">
+<div class="absolute left-0 top-1 w-2 h-2 rounded-full bg-primary-container"></div>
+<p class="text-sm text-outline font-mono mb-1">YESTERDAY</p>
+<h5 class="font-semibold text-on-surface">Doctor Appointment Added</h5>
+<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Emily scheduled a follow-up for next Tuesday at 3:00 PM.</p>
+</li>
+</ul>
+<button class="w-full mt-8 py-3 px-4 bg-surface-container-high text-primary font-bold rounded-xl hover:bg-stone-200 transition-colors">
+                        View Full History
+                    </button>
+</div>
+</div>
+</div>
+<!-- Featured Resource Section -->
+<section class="mt-16 mb-12">
+<div class="relative overflow-hidden rounded-3xl bg-primary h-64 flex items-center">
+<div class="absolute inset-0 opacity-20">
+<img class="w-full h-full object-cover" data-alt="Interior of a modern, warm, wood-paneled community center with soft morning light streaming through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuWAk8KZfCR091EgjXyQpdrnpscUg08a-Q3fX2V9ZoE76M_t2N3EqB6pinhA7MCh_K8zx_1tfGgqwYW9Z9A0Fn1KO8TXPru-yFhYXJMJ3Le8uvRInS1ugX0ObO10687qH0p50FZ-JOxyLhtAH8TZP5VDRPhbCh0c-X8WIwBI9b8V1E78bJm5N3FY7XSyaXnF3Y6xfflUSeaLVQCRS15vdzg1oy93d6TTDRMJePMpaalFI7pU9l1lPQHGUZdhSrSrOqZx-E2tEIoMQ"/>
+</div>
+<div class="relative z-10 px-12 max-w-xl">
+<span class="inline-block bg-white/10 text-white text-xs font-mono uppercase tracking-[0.2em] px-3 py-1 rounded-full mb-4">Caregiver Tips</span>
+<h3 class="text-3xl font-bold text-white mb-4 leading-tight">Managing Cognitive Load as a Caregiver</h3>
+<button class="bg-white text-primary px-6 py-2.5 rounded-full font-bold hover:scale-105 active:scale-95 transition-all">
+                        Read Editorial
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-[#fcf9f8] dark:bg-stone-950 border-t border-stone-200/15 dark:border-stone-800/15 shadow-[0_-4px_32px_rgba(28,27,27,0.04)] flex justify-around items-center px-4 pb-2 z-50 rounded-t-3xl">
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-5 py-2 hover:text-[#173901] dark:hover:text-stone-200 transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="text-sm font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#2D5016] text-white rounded-xl px-5 py-2 scale-98 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">group</span>
+<span class="text-sm font-medium">Family</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-5 py-2 hover:text-[#173901] dark:hover:text-stone-200 transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined mb-1">emergency_share</span>
+<span class="text-sm font-medium">Emergency</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 dark:text-stone-400 px-5 py-2 hover:text-[#173901] dark:hover:text-stone-200 transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined mb-1">menu_book</span>
+<span class="text-sm font-medium">Resources</span>
+</a>
+</nav>
+</body></html>

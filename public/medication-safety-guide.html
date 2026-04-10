@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f6f3f2",
+                        "surface-bright": "#fcf9f8",
+                        "surface": "#fcf9f8",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-fixed": "#0a2100",
+                        "tertiary-fixed": "#e4e2e1",
+                        "background": "#fcf9f8",
+                        "on-primary-container": "#98c27b",
+                        "error": "#ba1a1a",
+                        "secondary": "#b02d21",
+                        "on-secondary-fixed-variant": "#8e130c",
+                        "on-primary-fixed-variant": "#2c4f15",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "surface-tint": "#43682b",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary-container": "#474747",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "outline": "#73796c",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#410000",
+                        "primary-fixed-dim": "#a8d38a",
+                        "on-surface-variant": "#43493d",
+                        "surface-container-high": "#eae7e7",
+                        "secondary-fixed-dim": "#ffb4a9",
+                        "secondary-container": "#fc6451",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "surface-container": "#f0eded",
+                        "primary-container": "#2d5016",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#313131",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#c4efa3",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e5e2e1",
+                        "on-secondary-container": "#650001",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1c1b1b",
+                        "outline-variant": "#c3c9b9",
+                        "secondary-fixed": "#ffdad5",
+                        "surface-dim": "#dcd9d9",
+                        "primary": "#173901",
+                        "inverse-surface": "#313030",
+                        "on-tertiary-container": "#b7b5b5",
+                        "inverse-primary": "#a8d38a",
+                        "on-background": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 32px 64px -12px rgba(28, 27, 27, 0.04);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-primary">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-stone-100/60 backdrop-blur-md">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-stone-100 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_back">arrow_back</span>
+</button>
+<span class="text-xl font-bold tracking-tighter text-[#173901]">Mindful Guardian</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 text-sm font-medium text-stone-500 hover:bg-stone-100 rounded-xl transition-colors">Resources</button>
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-high border-2 border-white shadow-sm">
+<img alt="Senior user profile" data-alt="close-up portrait of a kind elderly man with white hair and a warm smile, soft natural indoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCain7OG37EEMPJkyBiq_GFRY2Z0zBvMd1h34mbUkhLkYux7AZ4DOpUkEXwUenogUDfN0FUuJeK6_VxO5_MwmO-eCUn1ptYT3P7Ubgwp7fA5nFjLPbt-9rhlkBNlBGpmREWCvkDpc50fGLIMAi_qJmihI_aSPTjZ8csvTRfDczEACJg6ubud7IYDl_aHo-CCvkuAkrQQeuis2AwHRxur4iXu1pvkbBQIqfoRnxcw2ybKByfp4177Ke-utZfSbZsyC5fa3VLhj7Z9tU"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-4xl mx-auto">
+<!-- Editorial Header Section -->
+<article class="space-y-12">
+<section class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant text-xs font-bold tracking-widest uppercase rounded-full">Safety Guide</span>
+<span class="text-stone-400 text-sm font-medium">8 min read</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-on-surface tracking-tighter leading-[1.1]">
+                    Managing Medication Safety
+                </h1>
+<p class="text-xl text-stone-600 leading-relaxed font-medium">
+                    A comprehensive guide for caregivers and seniors on organizing, administering, and monitoring essential medications with confidence.
+                </p>
+</section>
+<!-- Featured Image -->
+<figure class="relative h-[400px] w-full rounded-[2rem] overflow-hidden editorial-shadow">
+<img alt="Medication organization" class="w-full h-full object-cover" data-alt="neatly organized pill organizer on a clean wooden table with soft morning light streaming through a nearby window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwXlY-_lh3CBiLT39CB5E8Ge5wus57oiX2lBdXJpqLhfwWM9V7LrzkKym74hV_DcUrUnWSBsH2RJNMZ4cCjgXKSvWgD5RKyMceYs5EV1IbPc40V5dnd267JgEswFGSM_Q9qpvSxKe0U8XuwAeDzZB3qzQeF6TTNYi1CPdPzeSilPHrS4my6gDjoeqAODdta18ggADtpZwraHlucOmnOq9SbfxW0mpkKTDn8bU879YXTfMpupA1nSxLI7L1SJg0gfa1XiKH-dUvPhY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+</figure>
+<!-- Article Body -->
+<div class="space-y-8 text-on-surface">
+<p class="text-lg leading-relaxed md:text-xl">
+                    Effective medication management is the cornerstone of independent living. As the number of daily prescriptions increases, so does the complexity of maintaining a safe routine. This guide outlines the essential steps to ensure every dose is taken correctly and safely.
+                </p>
+<h2 class="text-2xl font-bold tracking-tight pt-4 border-l-4 border-primary pl-6">The Golden Rules of Storage</h2>
+<ul class="space-y-4">
+<li class="flex items-start gap-4">
+<span class="mt-1.5 w-2 h-2 rounded-full bg-primary flex-shrink-0"></span>
+<span class="text-lg leading-relaxed"><strong>Cool, Dry, and Dark:</strong> Most medications degrade in humidity. Avoid the bathroom cabinet; choose a dedicated kitchen shelf or a bedroom dresser.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="mt-1.5 w-2 h-2 rounded-full bg-primary flex-shrink-0"></span>
+<span class="text-lg leading-relaxed"><strong>Original Containers:</strong> Keep medications in their original bottles unless using a pre-filled weekly organizer. Original labels contain vital dosage and expiration info.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="mt-1.5 w-2 h-2 rounded-full bg-primary flex-shrink-0"></span>
+<span class="text-lg leading-relaxed"><strong>Out of Reach:</strong> Even for seniors, keep high-risk medications stored away from common areas to prevent accidental double-dosing by visitors or grandchildren.</span>
+</li>
+</ul>
+<!-- Safety Tip Callout Box -->
+<aside class="bg-surface-container-low rounded-[1.5rem] p-8 border-l-8 border-secondary-container">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="warning" style="font-variation-settings: 'FILL' 1;">warning</span>
+<h3 class="text-lg font-bold text-on-surface uppercase tracking-widest">Safety Tip</h3>
+</div>
+<p class="text-lg leading-relaxed text-on-surface-variant italic">
+                        "Always keep an updated <strong>Master Medication List</strong> in your wallet and on the refrigerator. Include the drug name, dosage, purpose, and the prescribing doctor's contact information for emergency responders."
+                    </p>
+</aside>
+<h2 class="text-2xl font-bold tracking-tight pt-4 border-l-4 border-primary pl-6">Preventing Common Mistakes</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-highest/40 p-6 rounded-2xl">
+<h4 class="font-bold text-primary mb-2">Morning Routine</h4>
+<p class="text-sm text-on-surface-variant">Pair medication with a consistent habit, like drinking your first glass of water or finishing breakfast.</p>
+</div>
+<div class="bg-surface-container-highest/40 p-6 rounded-2xl">
+<h4 class="font-bold text-primary mb-2">The Lighting Check</h4>
+<p class="text-sm text-on-surface-variant">Never take medicine in the dark. Always ensure you can clearly read the label before opening the bottle.</p>
+</div>
+</div>
+<p class="text-lg leading-relaxed">
+                    Finally, remember that your pharmacist is your best resource. If a pill looks different than the last refill, or if you experience unexpected fatigue or dizziness, contact them immediately. Safe management is a team effort between you, your family, and your medical providers.
+                </p>
+</div>
+<!-- Footer Actions -->
+<div class="pt-12 flex flex-col sm:flex-row gap-4 border-t border-stone-200/40">
+<button class="flex-1 bg-primary text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-3 hover:bg-primary-container transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+                    Share Guide with Family
+                </button>
+<button class="flex-1 bg-surface-container-high text-primary font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-3 hover:bg-stone-200 transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+                    Save for Offline
+                </button>
+</div>
+</article>
+</main>
+<!-- Bottom Navigation Bar (Mandatory Shell) -->
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-[#fcf9f8] flex justify-around items-center px-4 pb-2 z-50 rounded-t-3xl shadow-[0_-4px_32px_rgba(28,27,27,0.04)] border-t border-stone-200/15">
+<a class="flex flex-col items-center justify-center text-stone-600 px-5 py-2 hover:text-[#173901] transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] text-sm font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 px-5 py-2 hover:text-[#173901] transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-['Inter'] text-sm font-medium">Family</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-600 px-5 py-2 hover:text-[#173901] transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined" data-icon="emergency_share">emergency_share</span>
+<span class="font-['Inter'] text-sm font-medium">Emergency</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#2D5016] text-white rounded-xl px-5 py-2 transition-transform duration-200 scale-98" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-['Inter'] text-sm font-medium">Resources</span>
+</a>
+</nav>
+</body></html>

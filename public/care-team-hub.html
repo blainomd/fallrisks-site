@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-fixed-variant": "#8e130c",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#ffb4a9",
+                        "inverse-surface": "#313030",
+                        "surface-variant": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "secondary-container": "#fc6451",
+                        "on-primary": "#ffffff",
+                        "primary": "#173901",
+                        "inverse-on-surface": "#f3f0ef",
+                        "secondary": "#b02d21",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#eae7e7",
+                        "primary-fixed-dim": "#a8d38a",
+                        "outline-variant": "#c3c9b9",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "outline": "#73796c",
+                        "surface-tint": "#43682b",
+                        "on-surface-variant": "#43493d",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#b7b5b5",
+                        "on-background": "#1c1b1b",
+                        "background": "#fcf9f8",
+                        "surface-bright": "#fcf9f8",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#e4e2e1",
+                        "primary-container": "#2d5016",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#2c4f15",
+                        "on-primary-fixed": "#0a2100",
+                        "surface-container-low": "#f6f3f2",
+                        "primary-fixed": "#c4efa3",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "surface-container": "#f0eded",
+                        "on-surface": "#1c1b1b",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#ffdad5",
+                        "inverse-primary": "#a8d38a",
+                        "tertiary-container": "#474747",
+                        "surface": "#fcf9f8",
+                        "surface-container-highest": "#e5e2e1",
+                        "tertiary": "#313131",
+                        "on-primary-container": "#98c27b",
+                        "on-secondary-container": "#650001",
+                        "on-secondary-fixed": "#410000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .editorial-gradient {
+            background: radial-gradient(circle at center, #173901 0%, #2D5016 100%);
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-40 bg-[#fcf9f8]/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high">
+<img alt="Elderly user profile photo" class="w-full h-full object-cover" data-alt="Close-up portrait of a dignified elderly woman with soft natural lighting and a warm, calm expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGMt2p77xanQB24RBaWJJZWp2tJcOfanu9WIQm1Aef89TAxuLQSzs20bVFGpI45_Wrvt5vW0J8ZZlTSiMBaY9y4jGy9_1tl7ISA-Zsg07RgLRfyTqwcHMLHS2LeXt1TyTpvIL1FKxpTwjEtHaDyTffpZrjQxGrWjId2wcJTcJ5QMJV07buosG74KOG1GsWQ5rbmTq1kqQ9rDVEM7ILLgaOl9mU4u3NIUaR13zBcNIX7f2sEXXLZ4UMIvH3iLnhhOyRNLvAlvfLfeE"/>
+</div>
+<h1 class="text-2xl font-bold tracking-tighter text-stone-900">Mindful Care</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-stone-200/50 transition-colors active:scale-95 duration-150 text-stone-500">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-24">
+<!-- Hero Section: Coordination Hub -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="max-w-2xl">
+<span class="text-xs font-mono uppercase tracking-widest text-primary mb-2 block">Care Coordination Hub</span>
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface leading-tight">
+                        The Care Team
+                    </h2>
+<p class="mt-4 text-lg text-on-surface-variant leading-relaxed">
+                        A collaborative environment for Arthur's professional network. Real-time updates and clinical continuity at your fingertips.
+                    </p>
+</div>
+<div class="flex gap-3">
+<button class="editorial-gradient text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2 active:scale-95 transition-transform shadow-lg shadow-primary/10">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+                        Invite Professional
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Care Roster: Left Column (8 units) -->
+<div class="md:col-span-8 space-y-8">
+<div class="bg-surface-container-low rounded-[32px] p-8">
+<div class="flex justify-between items-center mb-8">
+<h3 class="text-2xl font-bold tracking-tight text-primary">Care Roster</h3>
+<span class="text-sm font-medium text-on-surface-variant bg-surface-container-high px-3 py-1 rounded-full">3 Active Professionals</span>
+</div>
+<div class="space-y-6">
+<!-- Nurse -->
+<div class="group flex items-center gap-6 p-4 rounded-2xl bg-surface hover:bg-surface-container-lowest transition-all">
+<div class="w-16 h-16 rounded-2xl overflow-hidden shadow-sm">
+<img alt="Nurse" class="w-full h-full object-cover" data-alt="Professional female nurse in clean clinical scrubs looking friendly and competent in a bright office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiU8oF588RZk6JNaJNAEj9I_QLIOlj6Y8b_eiAdNHAe8JcKH6blUxO7TB6P9tIVORmUNx5kVCkLBaV8OkilvykNtd5xLcSnbuZhv_Gi6psmvKKfeC5V3EXvsjCHH1Rrg66Xg5msKkok3s9eRfAQ6TvTQrhGHUXvDqPFWm7bB_sfzJRbDs5eG4vVS2WrjIdby-kDu_6JHhKfkTfDsfwQ2F5yRfPhnRZZQsRCwgMm9UB7tnij1VUfkthCHnnBWYV1PEAHi0P66YHBdU"/>
+</div>
+<div class="flex-1">
+<h4 class="text-lg font-bold text-on-surface">Sarah Jenkins, RN</h4>
+<p class="text-sm text-primary font-medium">Head Nurse &amp; Med Management</p>
+<div class="flex items-center gap-4 mt-2">
+<span class="text-xs text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> On Shift
+                                    </span>
+<span class="text-xs text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Primary Care
+                                    </span>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-high text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-high text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+</button>
+</div>
+</div>
+<!-- PT -->
+<div class="group flex items-center gap-6 p-4 rounded-2xl bg-surface hover:bg-surface-container-lowest transition-all">
+<div class="w-16 h-16 rounded-2xl overflow-hidden shadow-sm">
+<img alt="Physical Therapist" class="w-full h-full object-cover" data-alt="Male physical therapist in athletic professional attire smiling warmly in a clinical studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzL-RXf43mg3DxSD8VrRIuIs-cSedjDB1L7u2cWOf9E8uqc22rfiX1FqmFWFoFWraduRjfhmARvEKDcVdFJ2ZamRZY95X3nPB4UIuy725_AcMusYLqdIMbYC8iWxhpFGtsQoUm-WfXqc6owhZspcoS-0CjBFWoB5d6lfTQU3lpIz23GGEsXS_55atjcjUGy6rNXWLnVlsjR3XCwXlqOUWDj1vrr-7WFzbMxOeDJ5RfsrNM-EK4pPtbIkwvoGTnOUDwEMptT-IveoQ"/>
+</div>
+<div class="flex-1">
+<h4 class="text-lg font-bold text-on-surface">David Chen, DPT</h4>
+<p class="text-sm text-primary font-medium">Mobility &amp; Fall Prevention</p>
+<div class="flex items-center gap-4 mt-2">
+<span class="text-xs text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_available</span> Next Visit: Tuesday
+                                    </span>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-high text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-high text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+</button>
+</div>
+</div>
+<!-- Case Manager -->
+<div class="group flex items-center gap-6 p-4 rounded-2xl bg-surface hover:bg-surface-container-lowest transition-all">
+<div class="w-16 h-16 rounded-2xl overflow-hidden shadow-sm">
+<img alt="Case Manager" class="w-full h-full object-cover" data-alt="Confident woman in professional business attire with a kind gaze in a modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4Wa64ZTTuy4ge_echiyItz292T0VL5B3M-sbIX9owGeNZcYncFAk2o5W2LqMgPhTEJuW3MmRSMzxpdNZzA-A5Rh7QlDU4A_iJDTzUCXtAIyTwxfd1OwGTTrKLOPLrxM3mGJqp6KNYrU6I_SbZufsDLL3OfmbxQiDGaJpDQ2AzbATqGWKZLe0tEx1s_nIAYWcZ-2A0PHGgMZB2oUPLLjhSgLUyHNxW2Z6JYpFjQnEux27w-RZ-hd4pgyPDW9i70TqnWUAXeBfQ0Gg"/>
+</div>
+<div class="flex-1">
+<h4 class="text-lg font-bold text-on-surface">Elena Rodriguez</h4>
+<p class="text-sm text-primary font-medium">LCSW &amp; Case Management</p>
+<div class="flex items-center gap-4 mt-2">
+<span class="text-xs text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">notifications_active</span> Plan Update Due
+                                    </span>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-high text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-high text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Shared Care Log -->
+<div class="bg-surface-container-low rounded-[32px] p-8">
+<div class="flex justify-between items-center mb-8">
+<h3 class="text-2xl font-bold tracking-tight text-primary">Shared Care Log</h3>
+<button class="text-sm font-bold text-primary flex items-center gap-1">
+                            Full History <span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="space-y-4">
+<div class="p-6 bg-surface-container-lowest rounded-2xl border-l-4 border-primary shadow-sm">
+<div class="flex justify-between items-start mb-2">
+<span class="font-bold text-on-surface">Sarah Jenkins, RN</span>
+<span class="text-xs font-mono text-stone-400">2h ago</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed mb-4">
+                                Blood pressure stable at 122/80. Arthur was particularly energetic today. We completed 15 minutes of gait training. No signs of dizziness reported during elevation transitions.
+                            </p>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-surface-container-low rounded-full text-[11px] font-bold text-primary-container">VITALS: STABLE</span>
+<span class="px-3 py-1 bg-surface-container-low rounded-full text-[11px] font-bold text-primary-container">ACTIVITY: HIGH</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest rounded-2xl border-l-4 border-stone-200">
+<div class="flex justify-between items-start mb-2">
+<span class="font-bold text-on-surface">David Chen, DPT</span>
+<span class="text-xs font-mono text-stone-400">Yesterday, 4:15 PM</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                                Adjusted the walker height by 1cm to encourage better spinal alignment. He's adapting well but watch for fatigue in the late afternoon.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Side Panels: Right Column (4 units) -->
+<div class="md:col-span-4 space-y-8">
+<!-- Group Chat Entry -->
+<div class="editorial-gradient rounded-[32px] p-8 text-white shadow-xl">
+<h3 class="text-xl font-bold mb-4">Team Coordination</h3>
+<div class="flex -space-x-3 mb-6">
+<img alt="Sarah" class="w-10 h-10 rounded-full border-2 border-primary-container" data-alt="Female nurse portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjz8MZ3yAr0am17dQj48k4NUERQe-u_TWvNZi18r3d3CW24yk45KzGVkFvjFf4ifPJgKea43UUutf8YXiTkJAGEix97je_ufR4ZqkA2KC0oQWomazPMPyC6V1l5-6E4GcgHqdUgy_Vuv7W_sw7zOT1y7snjbbNqCO1Lu9Ch9pHTX7Qw2lhFhzz0zuOzLLqACXeoFawZvfq5Yq9Hz7BK5dBGlObsXKDCiRubqdcQ7oWzH9ZbRXs86xnJJQuDqzuZ3476VYz4DEB2ws"/>
+<img alt="David" class="w-10 h-10 rounded-full border-2 border-primary-container" data-alt="Male PT portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgwuqCSg1Jv80XPaEnM_0NCLGrOG_iwmZC7QCShUJ_xuBWYsSMBGdcvhbUto_9_Wpb__tSIX8l1Txy9snWoPa6_59p-nP3NjF0Me34kijlM8ROIotQ8HPsNXQA_4yjW4PeMt33MqBk0kVfSixPPPSiL3hjpwmGPMwIYeKIlX0M7_ABzVHiGn-DJj1gUxEQp-JWRwqwvfn-PWej5sqHLfnxfu36hbftvPZ3cbDN_99OFec_IEcau4zDdgkoy-zbqgK8zFY_-3De7BY"/>
+<img alt="Elena" class="w-10 h-10 rounded-full border-2 border-primary-container" data-alt="Female case manager portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHNvgS6HdrBElMYQrywNMljU2WWlNDb3UZFuu_w22pH9ZrN63qp5PaMphFghChN7knIZpfYxPF8Dyd5mm5qgLtysCDUpGzD-gV9pms8KgYqdyO6OsWMsEWtdVdFofT5aAvxBVdR8EQimIgDyNhuhkaeYUWj0qHud3oOhx2l0eb58GfM3zXydTHUaT5P-8eX3S_e3j_bq1KZR7HzwsmdtbasRHtDNA8-9-s8MRQ_ql8lVWAOpKB_j3JGVvNY-Crzn1hIBbpL7a9zxo"/>
+<div class="w-10 h-10 rounded-full border-2 border-primary-container bg-surface-container-high flex items-center justify-center text-primary text-xs font-bold">+1</div>
+</div>
+<p class="text-on-primary-container text-sm leading-relaxed mb-6">
+                        "Arthur's new prescription is ready for pickup. David, can you confirm if this affects the session tomorrow?"
+                    </p>
+<button class="w-full bg-white text-primary py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-stone-100 transition-colors">
+                        Open Group Chat
+                        <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+<!-- Shift Calendar Summary -->
+<div class="bg-surface-container-low rounded-[32px] p-8">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-xl font-bold text-primary">Shift Calendar</h3>
+<span class="material-symbols-outlined text-stone-400">calendar_today</span>
+</div>
+<div class="space-y-4">
+<div class="flex gap-4">
+<div class="flex flex-col items-center">
+<span class="text-xs font-bold text-stone-400 uppercase">Mon</span>
+<span class="text-lg font-black text-primary leading-none">12</span>
+</div>
+<div class="flex-1 bg-surface rounded-2xl p-3 border-l-2 border-secondary-container">
+<p class="text-xs font-bold text-secondary">AM Shift</p>
+<p class="text-sm font-semibold text-on-surface">Sarah Jenkins</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex flex-col items-center">
+<span class="text-xs font-bold text-stone-400 uppercase">Tue</span>
+<span class="text-lg font-black text-primary leading-none">13</span>
+</div>
+<div class="flex-1 bg-surface rounded-2xl p-3 border-l-2 border-primary">
+<p class="text-xs font-bold text-primary">PT Session</p>
+<p class="text-sm font-semibold text-on-surface">David Chen</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex flex-col items-center opacity-40">
+<span class="text-xs font-bold text-stone-400 uppercase">Wed</span>
+<span class="text-lg font-black text-primary leading-none">14</span>
+</div>
+<div class="flex-1 bg-surface-container-high rounded-2xl p-3 flex items-center">
+<p class="text-xs font-medium text-stone-500 italic">No professional visits</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Actions Card -->
+<div class="bg-surface-container-highest rounded-[32px] p-8">
+<h3 class="text-xl font-bold text-primary mb-6">Care Resources</h3>
+<div class="space-y-3">
+<button class="w-full flex items-center justify-between p-4 bg-surface rounded-2xl group hover:bg-primary transition-all">
+<span class="font-semibold group-hover:text-white">Insurance Docs</span>
+<span class="material-symbols-outlined text-stone-400 group-hover:text-white">description</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 bg-surface rounded-2xl group hover:bg-primary transition-all">
+<span class="font-semibold group-hover:text-white">Medication List</span>
+<span class="material-symbols-outlined text-stone-400 group-hover:text-white">medication</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 bg-surface rounded-2xl group hover:bg-primary transition-all">
+<span class="font-semibold group-hover:text-white">Safety Checklist</span>
+<span class="material-symbols-outlined text-stone-400 group-hover:text-white">fact_check</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- NavigationDrawer (Hidden on mobile, showing context only) -->
+<div class="hidden lg:block fixed top-24 left-6 h-[calc(100vh-140px)] w-72 bg-white rounded-3xl shadow-2xl py-8 px-6 space-y-4">
+<div class="flex items-center gap-4 mb-8 pb-4 border-b border-stone-50">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img alt="Arthur Miller" data-alt="Senior user portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiuNWP78q8XSfdT0UsROZoLuFp4dZaVxwak0vMKl3ErIEZ5WvgtVMEoeqU_5PZmhcCLoCfcAuReolfFpiBmXbH-n0EEXS7hTK6BCQP68BinER_xIqQZrm7tO15PdV4igd30_Kh3K2SezY-D93qt1KMyYc9AxlEi2lax15BqgFI8QN1EMTNfA2VkVSIy5hSXGwzN2wdi5xLvWGUQVS4bp5n5hq-mQyb4Qh2vMf7PO3wPnRjm1l8s_1-VmKbENED1LXfXXQ4VrIG9-M"/>
+</div>
+<div>
+<p class="font-bold text-primary">Arthur Miller</p>
+<p class="text-xs text-stone-500">Premium Member</p>
+</div>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 rounded-2xl text-stone-600 hover:bg-stone-50 transition-all" href="#">
+<span class="material-symbols-outlined">analytics</span> Clinical Reports
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-2xl text-stone-600 hover:bg-stone-50 transition-all" href="#">
+<span class="material-symbols-outlined">history</span> Safety History
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-stone-50 text-[#173901] font-bold" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">hub</span> Caregiver Network
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-2xl text-stone-600 hover:bg-stone-50 transition-all" href="#">
+<span class="material-symbols-outlined">settings_input_component</span> Device Settings
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-2xl text-stone-600 hover:bg-stone-50 transition-all" href="#">
+<span class="material-symbols-outlined">help_outline</span> Support
+            </a>
+</nav>
+</div>
+<!-- BottomNavBar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-white flex justify-around items-center px-4 pt-3 pb-8 rounded-t-[32px] shadow-[0_-8px_32px_rgba(28,27,27,0.06)] z-50 border-t border-stone-100">
+<div class="flex flex-col items-center justify-center text-stone-400">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-[10px] font-medium mt-1">Dashboard</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400">
+<span class="material-symbols-outlined">nest_remote_comfort_sensor</span>
+<span class="text-[10px] font-medium mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400">
+<span class="material-symbols-outlined">monitor_heart</span>
+<span class="text-[10px] font-medium mt-1">Health</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-stone-100 text-[#173901] rounded-2xl px-3 py-1.5">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span class="text-[10px] font-bold mt-0.5">Care</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400">
+<span class="material-symbols-outlined">shopping_basket</span>
+<span class="text-[10px] font-medium mt-1">Shop</span>
+</div>
+</nav>
+</body></html>

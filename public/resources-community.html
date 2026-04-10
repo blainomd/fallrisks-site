@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1c1b1b",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#fcf9f8",
+                    "tertiary-fixed": "#e4e2e1",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "on-surface-variant": "#43493d",
+                    "on-background": "#1c1b1b",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-primary-container": "#98c27b",
+                    "inverse-on-surface": "#f3f0ef",
+                    "surface-container": "#f0eded",
+                    "tertiary-fixed-dim": "#c8c6c6",
+                    "primary-container": "#2d5016",
+                    "on-primary-fixed": "#0a2100",
+                    "error": "#ba1a1a",
+                    "primary": "#173901",
+                    "secondary-container": "#fc6451",
+                    "primary-fixed-dim": "#a8d38a",
+                    "surface-container-low": "#f6f3f2",
+                    "on-secondary-fixed": "#410000",
+                    "inverse-primary": "#a8d38a",
+                    "background": "#fcf9f8",
+                    "surface-tint": "#43682b",
+                    "on-secondary-fixed-variant": "#8e130c",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-fixed-variant": "#2c4f15",
+                    "secondary": "#b02d21",
+                    "tertiary-container": "#474747",
+                    "on-tertiary-container": "#b7b5b5",
+                    "inverse-surface": "#313030",
+                    "secondary-fixed-dim": "#ffb4a9",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#eae7e7",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fcf9f8",
+                    "on-secondary-container": "#650001",
+                    "outline-variant": "#c3c9b9",
+                    "secondary-fixed": "#ffdad5",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "primary-fixed": "#c4efa3",
+                    "surface-variant": "#e5e2e1",
+                    "outline": "#73796c",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#313131",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-6 py-4 sticky top-0 z-40 bg-[#fcf9f8]/90 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#173901] text-2xl" data-icon="shield_with_heart">shield_with_heart</span>
+<h1 class="text-xl font-extrabold tracking-tighter text-[#173901]">Mindful Guardian</h1>
+</div>
+<div class="h-10 w-10 rounded-full bg-surface-container-highest overflow-hidden border-2 border-primary-fixed">
+<img alt="Senior user profile" class="h-full w-full object-cover" data-alt="Portrait of a kind senior woman with silver hair smiling warmly in soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfb_MqjKBV0Lom1DoJmkqQa_dCKLfGqvBIk63HfIZ5atA8_QE7cG2f6RNkfWxtvcr2O-kHDDRWTZXIEertR38i7J2sp8N7XjnJ-HeLL0OpS8ZPrh-yOHZY6yrZAvs9zTaxiaS7l1SvqDUmGCMH4VWFyqQgOoeGlVozABnvpRe6lQKDQSxIVk2hpjQIYkNT3eYbIAfhZo8AMw37N0RP3qlG2Cr1yF75oBj0kGT9H76LlTUKlk7y8kRMeXEFD46LQ6pC4ocG3XdQzyM"/>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-8">
+<!-- Title & Search Section -->
+<div class="mb-12">
+<h2 class="text-4xl font-extrabold tracking-tight text-on-surface mb-2">Resources</h2>
+<p class="text-on-surface-variant font-medium text-lg max-w-2xl mb-8">Guided expertise and community support for a safer, more confident home life.</p>
+<div class="relative max-w-xl group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant" data-icon="search">search</span>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-stone-400 transition-all" placeholder="Search articles, videos, or support groups..." type="text"/>
+</div>
+</div>
+<!-- Categories Bento Grid -->
+<section class="mb-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Exercise Category -->
+<div class="group cursor-pointer bg-surface-container-low rounded-3xl p-8 relative overflow-hidden flex flex-col justify-between aspect-square md:aspect-video lg:aspect-square">
+<div class="z-10">
+<div class="bg-primary-fixed w-12 h-12 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="fitness_center">fitness_center</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-2">Exercise</h3>
+<p class="text-on-surface-variant leading-relaxed">Daily routines for balance, strength, and mobility.</p>
+</div>
+<div class="absolute bottom-[-20%] right-[-10%] opacity-10 transition-transform group-hover:scale-110 duration-500">
+<span class="material-symbols-outlined text-[12rem]" data-icon="exercise">exercise</span>
+</div>
+<div class="z-10 flex items-center text-primary font-bold gap-2">
+<span>14 Resources</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Medication Category -->
+<div class="group cursor-pointer bg-secondary-fixed rounded-3xl p-8 relative overflow-hidden flex flex-col justify-between aspect-square">
+<div class="z-10">
+<div class="bg-on-secondary w-12 h-12 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary" data-icon="medication">medication</span>
+</div>
+<h3 class="text-2xl font-bold text-on-secondary-fixed-variant mb-2">Medication</h3>
+<p class="text-on-secondary-fixed-variant/80 leading-relaxed">Safe management and tracking strategies.</p>
+</div>
+<div class="absolute bottom-[-15%] right-[-10%] opacity-10">
+<span class="material-symbols-outlined text-[10rem]" data-icon="pill">pill</span>
+</div>
+<div class="z-10 flex items-center text-secondary font-bold gap-2">
+<span>8 Resources</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Home Hazards Category -->
+<div class="group cursor-pointer bg-tertiary-fixed rounded-3xl p-8 relative overflow-hidden flex flex-col justify-between aspect-square">
+<div class="z-10">
+<div class="bg-surface-container-lowest w-12 h-12 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary" data-icon="home_health">home_health</span>
+</div>
+<h3 class="text-2xl font-bold text-on-tertiary-fixed mb-2">Home Hazards</h3>
+<p class="text-on-tertiary-fixed-variant leading-relaxed">Audit checklists for fall prevention.</p>
+</div>
+<div class="absolute bottom-[-10%] right-[-10%] opacity-10">
+<span class="material-symbols-outlined text-[10rem]" data-icon="detector_status">detector_status</span>
+</div>
+<div class="z-10 flex items-center text-tertiary font-bold gap-2">
+<span>12 Resources</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Articles & Videos -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Left: Curated Articles -->
+<div class="lg:col-span-2 space-y-12">
+<div>
+<div class="flex items-center justify-between mb-8">
+<h4 class="text-2xl font-bold">Featured Content</h4>
+<button class="text-primary font-bold flex items-center gap-1">View all <span class="material-symbols-outlined text-base">chevron_right</span></button>
+</div>
+<div class="space-y-6">
+<!-- Featured Card 1 -->
+<article class="group bg-surface-container-lowest rounded-3xl overflow-hidden flex flex-col md:flex-row transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="md:w-2/5 h-64 md:h-auto overflow-hidden">
+<img alt="Safe home environment" class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-700" data-alt="Modern minimalist living room with bright natural lighting and no clutter on the wooden floor for safety" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnUV2_WICR9EMADUU3zWCsznMbFCcE5LN4UpUWFMLVIeklmBRKoRZ3Sf4j8omxYgpT-6Z5lQ4AJ_yvjnnjPUWyiXnHMlxXMDNUWKLp9M_KZ2gZDr_isE2HsFmLIy9EeH3zIP3pSg4Y23yyALstsswZtGbryT8lM9IulEJohnbifXWb2kyuCIi1CyE35_8I-FJHUPoSTmwtfHyC5sMjj5T_rj5xF3Ly3eokLKZAOSd86BKF7Lq8CHZ90ssCpU6QKKV7r6ZJdMaby28"/>
+</div>
+<div class="p-8 md:w-3/5 flex flex-col justify-center">
+<span class="text-secondary font-bold text-xs uppercase tracking-widest mb-3">Safety Guide</span>
+<h5 class="text-2xl font-bold mb-4 leading-tight group-hover:text-primary transition-colors">10 Silent Hazards in the Modern Living Room</h5>
+<p class="text-on-surface-variant line-clamp-2 mb-6">Learn how to identify and mitigate risks that are often overlooked, from loose rugs to poor lighting transitions.</p>
+<div class="flex items-center gap-4 text-sm font-medium text-stone-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">schedule</span> 8 min read</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">visibility</span> 2.4k views</span>
+</div>
+</div>
+</article>
+<!-- Video Card -->
+<article class="group bg-surface-container-lowest rounded-3xl overflow-hidden flex flex-col md:flex-row transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="md:w-2/5 h-64 md:h-auto overflow-hidden relative">
+<img alt="Yoga for balance" class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-700" data-alt="Calm instructor performing a gentle balance exercise in a sun-drenched studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtHgI4_9YEryeMmoYGgFer8RqT7fyb3l2UyOWnV_meM8yc0NbPIsUndh5uSEcohyguwnph_o9MoUNqHNZRT0gBVyGW6x61Q2xUVGg7bdb2HkMrOk8PIo1IKJRyB0wLNXf2-v73g7Hu0Np7wtlnwBvn643Ni0XiGvD_NZ46b8nsXRGGW6wuOOOUlZw_sObdGembdirvmjBdcgbplva8rGzvV6vWkzJqBEBoTBWVCZv4hnaEGwen5kOrK-G4-gW4mo8XWKl2S77-6nk"/>
+<div class="absolute inset-0 flex items-center justify-center bg-primary/20">
+<div class="w-16 h-16 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-lg">
+<span class="material-symbols-outlined text-4xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="p-8 md:w-3/5 flex flex-col justify-center">
+<span class="text-[#2d5016] font-bold text-xs uppercase tracking-widest mb-3">Video Tutorial</span>
+<h5 class="text-2xl font-bold mb-4 leading-tight group-hover:text-primary transition-colors">5-Minute Morning Balance Routine</h5>
+<p class="text-on-surface-variant line-clamp-2 mb-6">A follow-along video designed specifically for seniors to wake up the joints and improve stability.</p>
+<div class="flex items-center gap-4 text-sm font-medium text-stone-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">timer</span> 5:12</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">thumb_up</span> 850 likes</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+<!-- Right: Community & Support -->
+<div class="space-y-8">
+<div class="bg-primary text-on-primary rounded-3xl p-8 shadow-2xl shadow-primary/20">
+<h4 class="text-2xl font-bold mb-4">Local Support Groups</h4>
+<p class="opacity-80 mb-8 font-medium">Connect with others in your neighborhood for shared experiences and local advice.</p>
+<div class="space-y-6">
+<div class="flex items-start gap-4 p-4 bg-white/5 rounded-2xl hover:bg-white/10 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary-fixed mt-1" data-icon="groups">groups</span>
+<div>
+<h6 class="font-bold">Oakwood Wellness Circle</h6>
+<p class="text-sm opacity-70">2.4 miles away • Meets Tuesdays</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white/5 rounded-2xl hover:bg-white/10 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary-fixed mt-1" data-icon="medical_services">medical_services</span>
+<div>
+<h6 class="font-bold">Med-Safe Community</h6>
+<p class="text-sm opacity-70">Virtual • Monthly Webinar</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-8 py-4 bg-primary-fixed text-primary font-bold rounded-xl hover:bg-primary-fixed-dim transition-colors">Find Near Me</button>
+</div>
+<div class="bg-surface-container-low rounded-3xl p-8">
+<h4 class="text-xl font-bold mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li>
+<a class="flex items-center justify-between group" href="#">
+<span class="font-medium text-on-surface-variant group-hover:text-primary transition-colors">Emergency Response Checklist</span>
+<span class="material-symbols-outlined text-stone-300 group-hover:text-primary" data-icon="download">download</span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between group" href="#">
+<span class="font-medium text-on-surface-variant group-hover:text-primary transition-colors">Medication Side-Effect Chart</span>
+<span class="material-symbols-outlined text-stone-300 group-hover:text-primary" data-icon="open_in_new">open_in_new</span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between group" href="#">
+<span class="font-medium text-on-surface-variant group-hover:text-primary transition-colors">Home Caregiver Guidebook</span>
+<span class="material-symbols-outlined text-stone-300 group-hover:text-primary" data-icon="menu_book">menu_book</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-8 pt-3 bg-[#fcf9f8] shadow-[0_-4px_24px_rgba(28,27,27,0.04)] rounded-t-3xl">
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 opacity-60" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="dashboard">dashboard</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-wider">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 opacity-60" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="fact_check">fact_check</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-wider">Assessment</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#2D5016] text-white rounded-2xl px-5 py-2.5 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="menu_book">menu_book</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-wider">Library</span>
+</a>
+</nav>
+</body></html>

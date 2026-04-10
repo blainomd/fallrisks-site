@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mindful Guardian - Safety Assessment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1c1b1b",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#fcf9f8",
+                    "tertiary-fixed": "#e4e2e1",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "on-surface-variant": "#43493d",
+                    "on-background": "#1c1b1b",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-primary-container": "#98c27b",
+                    "inverse-on-surface": "#f3f0ef",
+                    "surface-container": "#f0eded",
+                    "tertiary-fixed-dim": "#c8c6c6",
+                    "primary-container": "#2d5016",
+                    "on-primary-fixed": "#0a2100",
+                    "error": "#ba1a1a",
+                    "primary": "#173901",
+                    "secondary-container": "#fc6451",
+                    "primary-fixed-dim": "#a8d38a",
+                    "surface-container-low": "#f6f3f2",
+                    "on-secondary-fixed": "#410000",
+                    "inverse-primary": "#a8d38a",
+                    "background": "#fcf9f8",
+                    "surface-tint": "#43682b",
+                    "on-secondary-fixed-variant": "#8e130c",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-fixed-variant": "#2c4f15",
+                    "secondary": "#b02d21",
+                    "tertiary-container": "#474747",
+                    "on-tertiary-container": "#b7b5b5",
+                    "inverse-surface": "#313030",
+                    "secondary-fixed-dim": "#ffb4a9",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#eae7e7",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fcf9f8",
+                    "on-secondary-container": "#650001",
+                    "outline-variant": "#c3c9b9",
+                    "secondary-fixed": "#ffdad5",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "primary-fixed": "#c4efa3",
+                    "surface-variant": "#e5e2e1",
+                    "outline": "#73796c",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#313131",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .glass-header {
+            background: rgba(252, 249, 248, 0.9);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-6 py-4 sticky top-0 z-40 bg-[#fcf9f8]/90 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#173901] text-2xl" data-icon="shield_with_heart">shield_with_heart</span>
+<h1 class="text-xl font-extrabold tracking-tighter text-[#173901]">Mindful Guardian</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container">
+<img alt="Senior user profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a dignified senior woman with gentle expression and grey hair in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHQ2OxE7x9gBrJF7XaSjKYwdowEm_d0pi9QLVgAn4MaRba8GqCQDZFienwZT3mfkp__0MFh-HsjtT75bIQchBcylOHIqQo1Ippi02IiNqZZecnHF0XBxG-nbAMtzMeIFyhNMyp3F0WO53ZyflLQfUmPSnvS22xLG6Xlupum1U0F38zcVRhHMPZScJtS9-rEZXIQ-uB3RGT4BJs1TpMxaIySZXfTxcq4c4bGtvjP3XvZAWt5mIZn-nE8cuwaFaKZkSRpg2GueieEC4"/>
+</div>
+</header>
+<main class="flex-grow max-w-3xl mx-auto w-full px-6 py-8">
+<!-- Editorial Headline Section -->
+<div class="mb-10">
+<span class="font-mono text-[10px] tracking-widest text-primary font-bold uppercase mb-2 block">Step 2 of 5</span>
+<h2 class="text-4xl font-extrabold text-on-surface tracking-tight mb-4 leading-none">Safety Assessment</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-xl">
+                We're currently reviewing the <span class="text-primary font-bold">Bathroom</span>. These small adjustments significantly reduce fall risks and ensure daily independence.
+            </p>
+</div>
+<!-- Progress Visualizer -->
+<div class="bg-surface-container-low rounded-xl p-6 mb-12 flex items-center gap-6">
+<div class="relative w-20 h-20 flex-shrink-0">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-highest" cx="40" cy="40" fill="transparent" r="36" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-primary" cx="40" cy="40" fill="transparent" r="36" stroke="currentColor" stroke-dasharray="226" stroke-dashoffset="135" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center font-bold text-primary">40%</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-bold text-primary">Room Completion</h3>
+<p class="text-sm text-on-surface-variant">2 of 5 categories inspected</p>
+</div>
+</div>
+<!-- Assessment Questions List (High-End Card Style) -->
+<div class="space-y-6 mb-24">
+<!-- Question Card 1 -->
+<div class="bg-surface-container-lowest rounded-full p-6 shadow-[0_4px_24px_rgba(28,27,27,0.04)] border border-outline-variant/10">
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white" data-icon="bathroom">bathroom</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-on-surface leading-snug">Grab bars installed by the toilet?</h4>
+<p class="text-sm text-on-surface-variant mt-1">Sturdy handles anchored to wall studs, not just suction-based.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="bg-primary text-on-primary py-4 rounded-xl font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]" data-icon="check_circle">check_circle</span>
+                            YES
+                        </button>
+<button class="bg-surface-container-high text-on-surface-variant py-4 rounded-xl font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]" data-icon="cancel">cancel</span>
+                            NO
+                        </button>
+</div>
+</div>
+</div>
+<!-- Question Card 2 -->
+<div class="bg-surface-container-lowest rounded-full p-6 shadow-[0_4px_24px_rgba(28,27,27,0.04)] border border-outline-variant/10">
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white" data-icon="texture">texture</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-on-surface leading-snug">Non-slip bath mat inside the shower?</h4>
+<p class="text-sm text-on-surface-variant mt-1">High-grip rubber backing to prevent slipping on wet surfaces.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="bg-surface-container-high text-on-surface-variant py-4 rounded-xl font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]" data-icon="check_circle">check_circle</span>
+                            YES
+                        </button>
+<button class="bg-secondary text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]" data-icon="cancel">cancel</span>
+                            NO
+                        </button>
+</div>
+</div>
+</div>
+<!-- Question Card 3 -->
+<div class="bg-surface-container-lowest rounded-full p-6 shadow-[0_4px_24px_rgba(28,27,27,0.04)] border border-outline-variant/10">
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white" data-icon="light_mode">light_mode</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-on-surface leading-snug">Sufficient lighting for nighttime use?</h4>
+<p class="text-sm text-on-surface-variant mt-1">Automatic nightlights or easy-to-reach light switches.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="bg-surface-container-high text-on-surface-variant py-4 rounded-xl font-bold flex items-center justify-center gap-2">
+                            YES
+                        </button>
+<button class="bg-surface-container-high text-on-surface-variant py-4 rounded-xl font-bold flex items-center justify-center gap-2">
+                            NO
+                        </button>
+</div>
+</div>
+</div>
+<!-- Floating Tip/Action -->
+<div class="bg-primary-container text-on-primary-container p-6 rounded-full flex gap-4 items-center">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="lightbulb">lightbulb</span>
+<p class="text-sm font-medium">Expert Tip: Adding a shower chair can reduce fatigue and improve balance while bathing.</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-8 pt-3 bg-[#fcf9f8] shadow-[0_-4px_24px_rgba(28,27,27,0.04)] rounded-t-3xl">
+<button class="flex flex-col items-center justify-center text-stone-500 opacity-60 hover:bg-stone-100 transition-all p-2 rounded-2xl active:scale-90 duration-300">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-wider">Dashboard</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-[#2D5016] text-white rounded-2xl px-5 py-2.5 transition-all active:scale-90 duration-300">
+<span class="material-symbols-outlined" data-icon="fact_check" style="font-variation-settings: 'FILL' 1;">fact_check</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-wider">Assessment</span>
+</button>
+<button class="flex flex-col items-center justify-center text-stone-500 opacity-60 hover:bg-stone-100 transition-all p-2 rounded-2xl active:scale-90 duration-300">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-wider">Library</span>
+</button>
+</nav>
+</body></html>
