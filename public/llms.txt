@@ -1,0 +1,11 @@
+# FallRisks / Mindful Guardian
+
+> Home fall risk assessment for families. Room-by-room safety checks, emergency contacts, smart home monitoring, and care team coordination.
+
+## What we do
+FallRisks provides proactive fall prevention through room-by-room home safety assessments, medication safety guides, vitality profiles, and family care coordination. Connected to the co-op.care ecosystem for companion care and HSA/FSA eligibility.
+
+## Links
+- Website: https://fallrisks.com
+- co-op.care: https://co-op.care
+- Fall prevention: https://fallprevention.help
