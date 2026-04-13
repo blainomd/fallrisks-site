@@ -1,11 +1,24 @@
-# FallRisks / Mindful Guardian
+# FallRisks — Home Safety Assessment for Older Adults
 
-> Home fall risk assessment for families. Room-by-room safety checks, emergency contacts, smart home monitoring, and care team coordination.
+> Free 6-room home safety walkthrough for older adults and families. Identifies fall hazards in bathroom, bedroom, kitchen, stairs, living room, and outdoor spaces.
 
 ## What we do
-FallRisks provides proactive fall prevention through room-by-room home safety assessments, medication safety guides, vitality profiles, and family care coordination. Connected to the co-op.care ecosystem for companion care and HSA/FSA eligibility.
+FallRisks provides proactive fall prevention through a room-by-room home safety assessment. 36 million falls occur every year in the US — falls are the #1 cause of injury death in adults 65+. Most happen at home. Our assessment takes under 5 minutes and produces a prioritized hazard report with actionable fixes.
+
+## Key statistics
+- 36 million falls per year (CDC)
+- #1 cause of injury death in adults 65+ (CDC WISQARS)
+- 6 rooms covered: bathroom, bedroom, kitchen, stairs, living room, outdoor
+
+## Connected ecosystem
+- co-op.care: https://co-op.care — worker-owned companion caregivers for in-home support
+- HealthGait: https://healthgait.com — gait analysis and balance assessment
+- Altru.care: https://altru.care — physician services and Letters of Medical Necessity
+- ComfortCard: https://comfortcard.org — HSA/FSA health identity and spending
+- CareGoals: https://caregoals.com — advance care planning
+- SolvingHealth: https://solvinghealth.com — the underlying platform
 
 ## Links
 - Website: https://fallrisks.com
-- co-op.care: https://co-op.care
-- Fall prevention: https://fallprevention.help
+- Assessment: https://fallrisks.com/safety-assessment.html
+- MCP endpoint: solvinghealth-mcp-production.up.railway.app/mcp
