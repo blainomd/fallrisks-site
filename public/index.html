@@ -403,6 +403,50 @@
 
 </main>
 
+<!-- Email capture -->
+<section id="stay-updated" style="background:#f6f3ee;border-top:1px solid #c1c8c1;padding:48px 24px;">
+  <div style="max-width:480px;margin:0 auto;text-align:center;">
+    <h2 style="font-family:'Newsreader',serif;font-size:22px;color:#1c1c19;margin:0 0 8px;">Get fall prevention updates</h2>
+    <p style="font-size:14px;color:#414943;margin:0 0 20px;line-height:1.6;">New exercises, home safety tips, and coverage changes — delivered when they matter.</p>
+    <form id="fr-capture-form" onsubmit="frCaptureSubmit(event)" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+      <input type="email" id="fr-capture-email" placeholder="your@email.com" required autocomplete="email"
+        style="flex:1 1 220px;padding:12px 16px;border:1.5px solid #c1c8c1;border-radius:8px;font-family:'Inter',sans-serif;font-size:14px;color:#1c1c19;background:#fcf9f4;outline:none;">
+      <button type="submit" id="fr-capture-btn"
+        style="padding:12px 24px;background:#264f39;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;font-family:'Inter',sans-serif;white-space:nowrap;">
+        Stay updated
+      </button>
+    </form>
+    <div id="fr-capture-success" style="display:none;padding:12px 18px;background:#e6f4ec;border:1px solid #b3ddc5;border-radius:8px;font-size:14px;color:#264f39;font-weight:600;">
+      You're on the list. We'll be in touch.
+    </div>
+    <p style="margin-top:10px;font-size:11px;color:#717973;">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<script>
+async function frCaptureSubmit(e) {
+  e.preventDefault();
+  var email = document.getElementById('fr-capture-email').value;
+  var btn = document.getElementById('fr-capture-btn');
+  btn.disabled = true; btn.textContent = 'Joining…';
+  var SUPA = 'https://uhizqukdctkvluluheux.supabase.co/rest/v1/email_captures';
+  var KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVoaXpxdWtkY3Rrdmx1bHVoZXV4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM4NzQ1ODQsImV4cCI6MjA4OTQ1MDU4NH0._AxT5pBEi1GZ167JPJpHeg_k1E0Bbtzyj3UPKdTFEug';
+  try {
+    var r = await fetch(SUPA, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'apikey': KEY, 'Authorization': 'Bearer ' + KEY, 'Prefer': 'return=minimal' },
+      body: JSON.stringify({ email: email, brand: 'fallrisks.com', source: 'fallrisks_capture', metadata: {} })
+    });
+    var ok = r.ok || r.status === 201;
+    if (!ok) { var b = await r.json().catch(function(){return {};}); if (b && b.code !== '23505') throw new Error(); }
+    document.getElementById('fr-capture-form').style.display = 'none';
+    document.getElementById('fr-capture-success').style.display = 'block';
+  } catch(err) {
+    btn.disabled = false; btn.textContent = 'Try again';
+  }
+}
+</script>
+
 <footer class="border-t border-[#c1c8c1]/20 py-8 px-6 text-center text-xs text-[#717973]">
   <p>A <a href="https://solvinghealth.com" class="text-[#264f39]">SolvingHealth</a> health education initiative · <a href="https://co-op.care" class="text-[#264f39]">co-op.care</a> caregiver services · <a href="https://altru.care" class="text-[#264f39]">Altru.care</a> physician services</p>
   <p class="mt-2">Fall statistics: CDC STEADI Program, WISQARS 2023. NIH National Institute on Aging. JAMA Internal Medicine. Not a substitute for medical advice. Content reviewed by Josh Emdur, DO, April 2026.</p>
